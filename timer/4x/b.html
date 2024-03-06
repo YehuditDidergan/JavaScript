@@ -1,0 +1,50 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer Example</title>
+  <style>
+    #timer {
+      font-size: 24px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="timer">Loading...</div>
+
+  <script>
+    // Set the duration of the timer in seconds
+    const duration = 60;
+
+    // Get the HTML element where the timer will be displayed
+    const timerDisplay = document.querySelector('#timer');
+
+    // Initialize the timer value to the duration
+    let timer = duration;
+
+    // Function to update the timer value and display it
+    function updateTimer() {
+      const minutes = Math.floor(timer / 60);
+      const seconds = timer % 60;
+
+      timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+      // Decrement the timer value
+      timer--;
+
+      // Stop the timer when it reaches 0
+      if (timer < 0) {
+        clearInterval(intervalId);
+        alert('Timer expired!');
+      }
+    }
+
+    // Call the updateTimer function immediately
+    updateTimer();
+
+    // Start the timer by calling the updateTimer function every second
+    const intervalId = setInterval(updateTimer, 1000);
+  </script>
+</body>
+</html>

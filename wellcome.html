@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wellcome.css">
+    <link rel="stylesheet" href="f.css">
+    <title>wellcome</title>
+</head>
+<body>
+    <div id="enter">
+        <div id="stickers">
+            <img src="img/wellcom.png" id="wellcomImg" class="sticks" />
+            <img src="img/instruction.png" id="instruction" class="sticks" />
+            <a href="memoryGame.html"><img src="img/letsplay.png" id="lets" class="sticks" /></a>
+        </div>
+        <div id="information">
+            <form>
+                <div id="myForm">
+                    <input type="text" placeholder="name"> 
+                    <input type="text" placeholder="age" id="level">
+                    <input t id="level1" class="level"value="level1" onclick="putLevel1()">
+                    <input id="level2" class="level"value="level2" onclick="putLevel2()">
+                    <input id="level3" class="level" value="level3" onclick="putLevel3()">
+                    <br>
+
+                    <label for="range"><b>how do you like ice-cream</b></label>
+                    <input type="range" name="range">
+
+                </div>
+
+            </form>
+            <p id="myPre">
+                Instructions for the memory game:<br>
+                By clicking on the "LET'S PLAY" button, you will reach a screen with 16 face down cards.
+                Every 2 random cards have the same ice cream, and the matching pairs must be found.
+                How do you do that?
+                By pressing a card, it turns over and you can see the ice cream.
+                After revealing 2 cards, they are flipped back over and you have to remember which ice cream is in them.
+                When 2 identical cards are clicked, the cards remain visible.
+                We will see you collect as many ice creams as possible!!
+                With pleasure!
+            </p>
+        </div>
+    </div>
+    <script src="wellcome.js"></script>
+
+</body>
+
+</html>

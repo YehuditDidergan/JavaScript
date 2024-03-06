@@ -1,0 +1,88 @@
+body {
+    font-size: xx-large;
+    color: rgb(250, 79, 136);
+    align-items: center;
+    text-align: center;
+    background-image: url('img/pic0.png');
+    background-attachment: fixed;
+    /* position: fixed; */
+    /* background-size: cover; */
+    /* height: 100%; */
+}
+
+.cards {
+    height: 18vh;
+    width: 30vh;
+    font-size: xx-large;
+    margin: 0.5vh;
+}
+
+#all {
+    width: 80vh;
+    height: 80vh;
+
+    position: relative;
+    margin-left: 59vh;
+    /*  margin-right: 40vh; */
+}
+
+h1 {
+    text-align: center;
+    margin-left: 10vh;
+}
+
+.lineCards {
+    display: flex;
+}
+
+.what {
+    height: 18vh;
+    width: 20vh;
+    border-radius: 10%;
+}
+
+#winner,
+#over {
+    height: 80vh;
+    width: 65vh;
+    margin-left: 10vh;
+}
+
+#timer {
+    font-size: 24px;
+    text-align: center;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+  
+body background-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 500px) {
+    #all {
+        margin-left: 0vh;
+    }
+    .cards{
+        height: 10vh;
+        width: 10vh;
+        margin: 1vh;
+    }
+    .what{
+        height: 10vh;
+        width: 10vh;
+    }
+    
+    body{
+        width: 50vh;
+        position: fixed;
+    }
+    #over, #winner{
+        height: 40vh;
+        width: 35vh;
+    }
+}

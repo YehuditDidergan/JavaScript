@@ -1,0 +1,103 @@
+body {
+    font-size: xx-large;
+    color: rgb(122, 209, 246);
+    align-items: center;
+    text-align: center;
+    background-image: url('img/pic0.png');
+    /* background-attachment: fixed; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+form {
+    border-radius: 0.1%;
+    border-color: rgb(122, 209, 246);
+    /* margin-top: 10%; */
+    /* margin-left: 10%; */
+}
+.sticks {
+    height: 30vh;
+    /* padding-top: 0%; */
+    display: block;
+}
+#enter {
+    display: flex;
+}
+.level{
+    display:inline-block;
+}
+input {
+    size: 45px;
+    width: 80%;
+    padding: 3vh;
+    font-size: xx-large;
+    color: rgb(122, 209, 246); 
+    background-color: rgb(251, 214, 236);
+    border-color: double solid 1px rgb(250, 95, 185) ;
+    display: block;
+    margin: 1%;
+    size: 12vh;
+}
+#information {
+    margin-top: 10vh;
+    margin-left: 20vh;
+    width: 160vh;
+    height: 60vh;
+    display: inline-flex;
+
+}
+#myForm {
+    display: none;
+    width:50vh;
+    /* border-radius: 3%;
+    border-style: double solid rgb(233, 148, 117);
+    margin: 20vh; */
+}
+p {
+    display: none;
+    width: 80vh;
+    /* padding-left: 0vh; */
+}
+#stickers {
+}
+.level{
+size: 10vh;
+color: rgb(250, 44, 123);
+border-radius: 50%;
+width: 10vh;
+height: 10vh;
+background-color: rgb(101, 183, 238);
+font-size: large;
+}
+@media (max-width: 500px) {
+    .sticks {
+        height: 50vh;
+        display: inline-block;
+    }
+
+    #stickers {
+        display: flex;
+        /* justify-content: flex-start */
+    }
+
+    #information {
+        margin-top: 30vh;
+        margin-left: 0vh;
+        /* margin-right: 4000vh; */
+        /* height: 30vh;  */
+        display: block;
+    }
+    #enter{
+        display: block;
+    }
+    input {
+        /* size: 10px; */
+        /* width: 20%; */
+        padding: 1vh;
+        font-size:large;
+        width: 50vh;
+        height: 5vh;
+    }
+    body{
+        /* position: fixed; */
+    }
+}
